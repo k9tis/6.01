@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+var img =[];
+var div = $("<div>")
+$(div).css(
+	{ 
+		"width":"750",
+		"height":"750",
+	})
+$('body').append(div);
+
+img[0] = $('<img>');
+$(img[0]).attr("src","img/01.png");
+$(div).append(img[0]);
+
+img[1] = $('<img>');
+$(img[1]).attr("src","img/02.png");
+$(div).append(img[1]);
+
+img[2] = $('<img>');
+$(img[2]).attr("src","img/03.png");
+$(div).append(img[2]);
+
+img[3] = $('<img>');
+$(img[3]).attr("src","img/04.png");
+$(div).append(img[3]);
+
+img[4] = $('<img>');
+$(img[4]).attr("src","img/05.png");
+$(div).append(img[4]);
+
+$('img').fadeTo(20,0.3);
+
+$('img').click(function(){
+	$('img').fadeTo(20,0.3);
+	$(this).fadeTo(20,1);
+	
+});
+
+	
+</script>
+</body>
+</html>
